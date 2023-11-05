@@ -1,0 +1,11 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mdi:business-woman">
+<path id="Vector" d="M12.14 3C11.0889 3.01395 10.0858 3.44175 9.34821 4.19059C8.61061 4.93942 8.19802 5.9489 8.19995 7C8.13995 8.64 8.00995 10.47 7.22995 11.59C9.90995 13.22 12.2 13 12.2 13C12.2 13 14.49 13.22 17.17 11.59C16.32 10.22 16.14 8.54 16.2 7C16.2 4.79 14.41 3 12.2 3H12.14ZM9.05995 13.32C6.19995 13.93 4.19995 15.35 4.19995 17V21H12.2L9.19995 17H6.69995M12.2 21L13.98 13.81C13.98 13.81 13.2 14 12.2 14C11.2 14 10.42 13.81 10.42 13.81M12.2 21H20.2V17C20.2 15.35 18.2 13.93 15.34 13.32L17.7 17H15.2L12.2 21Z" fill="url(#paint0_linear_29_258)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_29_258" x1="20" y1="3" x2="49" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#970011"/>
+<stop offset="0.729846" stop-color="#FFCC00" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
