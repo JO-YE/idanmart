@@ -1,0 +1,92 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #f4f4f4;
+  font-size: 18px;
+}
+
+.signup {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.input {
+  width: 541px;
+  height: 68px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transform-origin: 0 0;
+  border-radius: 15px;
+  border: 2px #2e3237 solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.input:active {
+  border-color: rgba(255, 205, 0, 1);
+}
+
+.input:focus-within {
+  border-color: rgba(255, 205, 0, 1);
+}
+
+.input:invalid input:invalid {
+  border-color: rgba(150, 60, 56, 1);
+}
+
+
+label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  z-index: 1;
+  color: rgba(244, 244, 244, 0.5);
+  font-weight: 400;
+  letter-spacing: 0.36;
+  word-wrap: break-word;
+  line-height: 21.94px;
+  letter-spacing: 2%;
+}
+
+.mail-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 2.5;
+  top: 6.25;
+  margin-left: 26.4px;
+  margin-right: 10px;
+}
+
+.divider {
+  position: relative;
+  width: 40px;
+  height: 0px;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  border: 1px rgba(244, 244, 244, 0.3) solid;
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+input {
+  width: fit-content;
+  flex: 1;
+  color: rgba(244, 244, 244, 0.5);
+  font-weight: 400px;
+  font-size: 20px;
+  letter-spacing: 0.36;
+  word-wrap: break-word;
+  border: none;
+  outline: none;
+  background: transparent;
+}
