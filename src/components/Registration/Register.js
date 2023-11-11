@@ -10,7 +10,7 @@ const Register = () => {
       <Router>
         <Login /> {/* this will appear in all the registration component*/}
         <Routes>
-          <Route path="/registration" element={<Signup />} />
+          <Route path="/" element={<Signup />} />
           <Route path="/sign-in" element={<Signin />} />
         </Routes>
       </Router>

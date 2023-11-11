@@ -22,7 +22,7 @@ const Login = () => {
                   textDecoration: "none",
                   color: "rgba(244, 244, 244, 0.96)",
                 }}
-                to="/registration"
+                to="/"
               >
                 Registration
               </Link>
