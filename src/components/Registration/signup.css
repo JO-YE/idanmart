@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-bottom: 103.81px;
 }
 
 .input {
@@ -40,7 +41,6 @@ body {
 .input:invalid input:invalid {
   border-color: rgba(150, 60, 56, 1);
 }
-
 
 label {
   position: absolute;
@@ -89,4 +89,58 @@ input {
   border: none;
   outline: none;
   background: transparent;
+}
+
+.submitbutton {
+  width: 541px;
+  height: 68px;
+  padding: 10;
+  background: #b5022c;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  display: inline-flex;
+  margin-top: 80px;
+}
+
+.Register {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.48;
+  word-wrap: break-word;
+  background: transparent;
+  border: none;
+  outline: none;
+  line-height: 29.26px;
+}
+.signupwith {
+  margin-top: 46px;
+  margin-left: 199px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36;
+  word-wrap: break-word;
+}
+
+.socials {
+  margin-left: 208px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.Goggle {
+  width: 40px;
+  height: 40px;
+  position: relative;
 }

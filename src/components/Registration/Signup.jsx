@@ -5,6 +5,7 @@ import lock from "../assets/lock.svg";
 import user from "../assets/user.svg";
 import flag from "../assets/nigeria.svg";
 
+
 const Signup = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -110,6 +111,22 @@ const Signup = () => {
             required
           />
         </div>
+
+        {/* submit button */}
+        <div className="submitbutton">
+          <button className="Register">Register</button>
+        </div>
+
+        {/* signing up with social media account */}
+       {/* <div className="signupwith">
+          <p>Or Siggn up with</p>
+        </div>
+
+        <div className="socials">
+          <div className="Goggle">
+            <img src={Goggle} alt="" />
+          </div>
+  </div> */}
       </form>
     </div>
   );
