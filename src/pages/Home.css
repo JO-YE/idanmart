@@ -1,6 +1,4 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #f4f4f4;
   position: relative;
   display: flex;
   justify-content: center;
@@ -110,4 +108,102 @@ body {
   font-size: 20px;
   font-weight: 600px;
   word-wrap: break-word;
+}
+
+.landingpage .ellipse2 {
+  width: 234px;
+  height: 134px;
+  left: 931px;
+  top: 459px;
+  position: absolute;
+  background: #f77d0e;
+  box-shadow: 180px 180px 180px;
+  border-radius: 9999px;
+  filter: blur(180px);
+  position: absolute;
+  z-index: 1;
+}
+
+.shopper {
+  width: 784px;
+  height: 1082px;
+  left: 583px;
+  top: 0px;
+  position: absolute;
+}
+
+.textwrap {
+  margin-left: 70px;
+  margin-top: 90px;
+  z-index: 2;
+  position: relative;
+}
+
+.textwrap .text1 {
+  font-size: 60px;
+  font-weight: 600px;
+  letter-spacing: 1.2;
+  word-wrap: break-word;
+}
+
+.text1 .idanM {
+  font-size: 60px;
+  font-family: "Baloo Chettan";
+  font-weight: 800px;
+  letter-spacing: 1.2;
+  word-wrap: break-word;
+}
+
+.text2 {
+  width: 631px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  font-weight: 500px;
+  word-wrap: break-word;
+}
+
+.text3 {
+  width: 361px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 400px;
+  word-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+}
+
+.register-button {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.register-button button {
+  border-radius: 35px;
+  width: 211px;
+  background: transparent;
+  height: 64px;
+  font-size: 24px;
+  font-weight: 600px;
+  word-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  color: #f4f4f4;
+  border-width: 1px;
+  border-image: linear-gradient(
+    180deg,
+    rgb(181, 2, 44) 7.68%,
+    rgb(255, 205, 0) 83.53%
+  ) 1;
+  border-image-slice: 1;
+}
+
+.register-button button:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(181, 2, 44) 7.68%,
+    rgb(255, 205, 0) 83.53%
+  );
 }
