@@ -1,0 +1,113 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #f4f4f4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 33px 36px 40px 36px;
+  background: #261612;
+}
+
+.landingpage .overlap {
+  width: 1300px;
+  height: 920px;
+  position: relative;
+  background: linear-gradient(
+    118deg,
+    rgba(6, 2, 0, 0.92) 35%,
+    rgba(14, 5, 1, 0.44) 64%,
+    #030100 100%
+  );
+  border: 1px ridge transparent;
+  border-image: linear-gradient(to right, #3498db, #2ecc71, #9b59b6, #f39c12) 30;
+  border-image-slice: 1;
+  border-image-width: 3px;
+}
+
+.landingpage .ellipse {
+  width: 1344;
+  height: 958;
+  left: 50px;
+  top: 29px;
+  position: absolute;
+  background: #432002;
+  box-shadow: 600px 600px 600px;
+  border-radius: 9999px;
+  filter: blur(600px);
+}
+
+/* .landingpage .vector {
+  width: 108px;
+  height: 101px;
+  transform-origin: 0 0;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 23px; 
+  margin-right: 46px;
+} */
+
+.search-cont {
+  width: 1200px;
+  height: 168px;
+  position: relative;
+  background: #1f1f1f;
+  border-radius: 25px 0px 15px 0px;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  width: 820px;
+  height: 95px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+  padding-right: 16px;
+  background: #010101;
+  border-radius: 65px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.input {
+  color: #f4f4f4;
+  width: 400px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: 600px;
+  word-wrap: break-word;
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+}
+
+.search-button {
+  width: 186px;
+  height: 89px;
+  padding: 10px;
+  background: #eceaf0;
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  display: inline-flex;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 600px;
+  word-wrap: break-word;
+}
