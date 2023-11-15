@@ -14,7 +14,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className="body">
       {" "}
       <Login />
       <div className="signup">
