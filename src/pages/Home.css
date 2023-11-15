@@ -1,4 +1,4 @@
-.landingpage {
+div.landingpage {
   position: relative;
   display: flex;
   justify-content: center;
@@ -12,8 +12,9 @@
     #030100 100%  );
 }
 
-.landingpage .overlap {
+.landingpage.overlap {
   position: relative;
+  width: 100%;
 }
 
 .landingpage .ellipse {
