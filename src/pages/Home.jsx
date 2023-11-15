@@ -13,7 +13,7 @@ const Home = () => {
         <div className="search-cont">
           <div className="search">
             <input
-              className="input"
+              className="search_input"
               type="text"
               placeholder=" Search...“Disposable Cups”"
             />
@@ -47,7 +47,9 @@ const Home = () => {
               <Link to="/registration">
                 <button type="button">Get Started</button>
               </Link>
-              <button type="button">offers</button>
+              <Link to="/">
+                <button type="button">offers</button>
+              </Link>
             </div>
           </div>
 

@@ -1,27 +1,19 @@
-body {
+.landingpage {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 33px 36px 40px 36px;
-  background: #261612;
-}
-
-.landingpage .overlap {
-  width: 1300px;
-  height: 920px;
-  position: relative;
   background: linear-gradient(
     118deg,
     rgba(6, 2, 0, 0.92) 35%,
     rgba(14, 5, 1, 0.44) 64%,
-    #030100 100%
-  );
-  border: 1px ridge transparent;
-  border-image: linear-gradient(to right, #3498db, #2ecc71, #9b59b6, #f39c12) 30;
-  border-image-slice: 1;
-  border-image-width: 3px;
+    #030100 100%  );
+}
+
+.landingpage .overlap {
+  position: relative;
 }
 
 .landingpage .ellipse {
@@ -79,7 +71,7 @@ body {
   margin-left: 50px;
 }
 
-.input {
+.search_input {
   color: #f4f4f4;
   width: 400px;
   height: 80px;
@@ -193,10 +185,11 @@ body {
   color: #f4f4f4;
   border-width: 1px;
   border-image: linear-gradient(
-    180deg,
-    rgb(181, 2, 44) 7.68%,
-    rgb(255, 205, 0) 83.53%
-  ) 1;
+      180deg,
+      rgb(181, 2, 44) 7.68%,
+      rgb(255, 205, 0) 83.53%
+    )
+    1;
   border-image-slice: 1;
 }
 
