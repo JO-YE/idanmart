@@ -22,7 +22,7 @@ const Login = () => {
                   textDecoration: "none",
                   color: "rgba(244, 244, 244, 0.96)",
                 }}
-                to="/"
+                to="/registration"
               >
                 Registration
               </Link>
@@ -39,7 +39,7 @@ const Login = () => {
                   textDecoration: "none",
                   color: "rgba(244, 244, 244, 0.96)",
                 }}
-                to="/sign-in"
+                to="/signin"
               >
                 Sign In
               </Link>
