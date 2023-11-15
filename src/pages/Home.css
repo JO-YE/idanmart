@@ -174,7 +174,6 @@
 }
 
 .register-button button {
-  border-radius: 35px;
   width: 211px;
   background: transparent;
   height: 64px;
@@ -183,18 +182,16 @@
   word-wrap: break-word;
   font-family: "Montserrat", sans-serif;
   color: #f4f4f4;
-  border-width: 1px;
-  border-image: linear-gradient(
-      180deg,
-      rgb(181, 2, 44) 7.68%,
-      rgb(255, 205, 0) 83.53%
-    )
-    1;
+  border: 1px solid rgb(181, 2, 44);
+  border-bottom: 1px solid rgb(255, 205, 0);
+  border-right: 1px solid linear-gradient(to top, rgb(255, 217, 0));
+  border-radius: 35px;
+  transition: 1s;
   border-image-slice: 1;
 }
 
 .register-button button:hover {
-  background: linear-gradient(
+  background-image: linear-gradient(
     180deg,
     rgb(181, 2, 44) 7.68%,
     rgb(255, 205, 0) 83.53%
