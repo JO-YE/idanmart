@@ -2,12 +2,25 @@ import React from "react";
 import "./About_us.css";
 import { Appnavbar } from "../../components/appnavbar/appnavbar";
 import imgs from "../../components/assets/about1.jpeg";
-import imgs2 from '../../components/assets/about2.jpeg'
+import imgs2 from "../../components/assets/about2.jpeg";
+import card from "../../components/assets/logos_mastercard.svg";
+import atm from "../../components/assets/noto_credit-card.svg";
+import money from "../../components/assets/Group.svg";
+import visa from "../../components/assets/1495815261-jd08_84586 1.png";
+import interswitch from "../../components/assets/download__10_-removebg-preview 1.png";
+import facebook from '../../components/assets/logos_facebook.svg';
+import linkedin from '../../components/assets/Group1.svg';
+import X from '../../components/assets/simple-icons_x.svg';
+import instagram from '../../components/assets/mdi_instagram.svg';
+
+
+
 
 const About_us = () => {
   return (
     <section id="aboutus">
       <Appnavbar />
+      {/** About page section */}
       <section className="aboutPage">
         <h2>Our Story</h2>
         <div className="mainbox_about">
@@ -63,6 +76,8 @@ const About_us = () => {
           </section>
         </div>
       </section>
+
+      {/** Email section */}
       <section className="email_section">
         <h2>IdanMart vendor hub is here for YOU</h2>
         <h3>New to idanMart?</h3>
@@ -122,6 +137,67 @@ const About_us = () => {
               <div>
                 <h4>Get it on</h4>
                 <article>Apple store</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/** Footer section */}
+      <section className="footer_section">
+        <div className="footer">
+          {/** Footer text container */}
+          <div className="footertext">
+            <div className="about">
+              <h4>About us</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odi
+              </p>
+            </div>
+            <div className="needhelp">
+              <h4>Need help?</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odi
+              </p>
+            </div>
+            <div className="usefullink">
+              <h4>Useful Links</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odi
+              </p>
+            </div>
+          </div>
+          <div className="footerbottom">
+            <div className="footerleft">
+              <div className="payment">
+                <h4>Methods of Payment</h4>
+                <div className="paymentmethod">
+                  <img src={card} alt="" />
+                  <img src={atm} alt="" />
+                  <img src={money} alt="" />
+                  <img src={visa} alt="" />
+                  <img src={interswitch} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="footerright">
+              <div className="payment">
+                <h4>Follow us on</h4>
+                <div className="paymentmethod">
+                  <img src={facebook} alt="" />
+                  <img src={linkedin} alt="" />
+                  <img src={X} alt="" />
+                  <img src={instagram} alt="" />
+                </div>
               </div>
             </div>
           </div>
