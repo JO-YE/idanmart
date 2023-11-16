@@ -1,0 +1,196 @@
+/* download app and email section */
+.email_section {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 3vh;
+  padding-top: 5px;
+  color: white;
+}
+/* the header */
+.email_section h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.email_section h3 {
+  color: white;
+  font-size: 18px;
+  margin-inline: 5%;
+  line-height: 0.2;
+}
+/* the sub header */
+.email_section_subDiv {
+  font-size: 15px;
+  display: flex;
+  margin-inline: 5%;
+  color: rgb(79, 79, 79);
+  justify-content: space-between;
+  align-items: center;
+}
+.email_section_subDiv article {
+  font-weight: bold;
+  margin-inline: 5%;
+  color: #fff;
+}
+
+.email_box {
+  display: flex;
+  background-color: #fff;
+  padding-inline: 20px;
+  height: 46px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  flex-shrink: 0;
+}
+.email_box input{
+  font-size: 20px;
+  color: rgba(18, 18, 18, 0.42);
+}
+.getApp{
+display: flex;
+padding: 5px;
+align-items: center;
+gap: 5px;
+border-radius: 8px;
+width: 150px;
+border: 3px solid #FFF;
+}
+.getApp h4{
+  line-height: 0;
+}
+.getAppcontainer{
+display: flex;
+/* width: 100%; */
+}
+.getApp > div{
+  width: 100%;
+}
+
+/* Footer style */
+.footer_section {
+  width: 100%;
+  background: #b5022c;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 3vh;
+}
+
+.footer {
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.footertext {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: space-between;
+  text-align: justify;
+  flex: 1;
+  word-wrap: break-word;
+  font-size: 15px;
+
+}
+
+.footertext h4 {
+  text-align: left;
+  font-size: 18px;
+}
+
+.footertext .about .needhelp .usefullink {
+  padding: 10px;
+  justify-content: center;
+  display: block;
+}
+.footertext > div{
+    width: 20%;
+}
+.footerbottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.payment h4 {
+  margin-bottom: 6px;
+}
+.paymentmethod {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+}
+
+/* download app and email section */
+.email_section {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 3vh;
+  color: white;
+}
+/* the header */
+.email_section h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.email_section h3 {
+  color: white;
+  font-size: 18px;
+  margin-inline: 5%;
+  line-height: 0.2;
+}
+/* the sub header */
+.email_section_subDiv {
+  font-size: 15px;
+  display: flex;
+  margin-inline: 5%;
+  color: rgb(79, 79, 79);
+  justify-content: space-between;
+  align-items: center;
+}
+.email_section_subDiv article {
+  font-weight: bold;
+  margin-inline: 5%;
+  color: #fff;
+}
+
+.email_box {
+  display: flex;
+  background-color: #fff;
+  padding-inline: 20px;
+  height: 46px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  flex-shrink: 0;
+}
+.email_box input {
+  font-size: 20px;
+  color: rgba(18, 18, 18, 0.42);
+}
+.getApp {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  width: 150px;
+  border: 3px solid #fff;
+}
+.getApp h4 {
+  line-height: 0;
+}
+.getAppcontainer {
+  display: flex;
+  gap: 10px;
+  /* width: 100%; */
+}
+.getApp > div {
+  width: 100%;
+}
