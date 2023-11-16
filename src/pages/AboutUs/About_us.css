@@ -1,0 +1,70 @@
+/* style the body of the page*/
+#aboutus {
+  width: 100%;
+  background-color: #eceaf0;
+  color: black;
+  padding-bottom: 10%;
+}
+
+/* the heading */
+.aboutPage h2 {
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+/* this div contain the main text */
+.mainbox_about {
+  width: 100%;
+  justify-content: center;
+}
+
+/* adding padding to the text container*/
+.about_top {
+  margin-left: 100px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/**/
+.text-left {
+  flex: 2;
+  padding-right: 50px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Image in the about page*/
+.imgs {
+  width: 289px;
+  height: 335px;
+}
+
+/* second heading */
+.aboutPage h3 {
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 500px;
+  font-size: 26px;
+}
+
+/* the second heading body */
+.about_bottom {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+
+.text-right {
+    flex: 2;
+  padding-left: 70px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400px;
+  word-wrap: break-word;
+}
