@@ -22,7 +22,7 @@
   );
 }
 
-.landingpage .ellipse {
+.ellipse {
   width: 1344;
   height: 958;
   left: 50px;
@@ -100,7 +100,7 @@
 }
 
 /* gradient behind the image */
-.landingpage .ellipse2 {
+.ellipse2 {
   width: 234px;
   height: 134px;
   left: 931px;
