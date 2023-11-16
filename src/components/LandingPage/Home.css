@@ -5,9 +5,14 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-border: 3px solid #422C20;
-background: linear-gradient(118deg, rgba(6, 2, 0, 0.92) 29.02%, rgba(14, 5, 1, 0.44) 52.87%, #030100 81.81%);
-background-color: #261612;
+  border: 3px solid #422c20;
+  background: linear-gradient(
+    118deg,
+    rgba(6, 2, 0, 0.92) 29.02%,
+    rgba(14, 5, 1, 0.44) 52.87%,
+    #030100 81.81%
+  );
+  background-color: #261612;
 }
 
 .landingpage .overlap {
