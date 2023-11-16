@@ -3,17 +3,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 33px 36px 40px 36px;
   background: linear-gradient(
     118deg,
     rgba(6, 2, 0, 0.92) 35%,
     rgba(14, 5, 1, 0.44) 64%,
-    #030100 100%  );
+    #030100 100%
+  );
 }
 
 .landingpage .overlap {
   position: relative;
+  width: 100%;
+  background: linear-gradient(
+    118deg,
+    rgba(6, 2, 0, 0.92) 35%,
+    rgba(14, 5, 1, 0.44) 64%,
+    #030100 100%
+  );
 }
 
 .landingpage .ellipse {
@@ -28,35 +34,24 @@
   filter: blur(600px);
 }
 
-/* .landingpage .vector {
-  width: 108px;
-  height: 101px;
-  transform-origin: 0 0;
-  border-radius: 10px;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 23px; 
-  margin-right: 46px;
-} */
-
+/* search container at the top*/
 .search-cont {
   width: 1200px;
-  height: 168px;
+  height: 108px;
   position: relative;
   background: #1f1f1f;
   border-radius: 25px 0px 15px 0px;
   overflow: hidden;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
+/* search input in the container*/
 .search {
   width: 820px;
-  height: 95px;
+  height: 55px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 36px;
@@ -67,10 +62,11 @@
   align-items: center;
   gap: 10px;
   display: inline-flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 50px;
 }
 
+/* search input class*/
 .search_input {
   color: #f4f4f4;
   width: 400px;
@@ -84,9 +80,10 @@
   flex: 1;
 }
 
+/* Search button in the container */
 .search-button {
-  width: 186px;
-  height: 89px;
+  width: 136px;
+  height: 59px;
   padding: 10px;
   background: #eceaf0;
   border-radius: 45px;
@@ -102,6 +99,7 @@
   word-wrap: break-word;
 }
 
+/* gradient behind the image */
 .landingpage .ellipse2 {
   width: 234px;
   height: 134px;
@@ -116,14 +114,16 @@
   z-index: 1;
 }
 
+/* Image class */
 .shopper {
   width: 784px;
   height: 1082px;
   left: 583px;
-  top: 0px;
+  top: -50px;
   position: absolute;
 }
 
+/* This wraps the text in the home page */
 .textwrap {
   margin-left: 70px;
   margin-top: 90px;
@@ -138,6 +138,7 @@
   word-wrap: break-word;
 }
 
+/* Changing the font family of idanMart */
 .text1 .idanM {
   font-size: 60px;
   font-family: "Baloo Chettan";
@@ -163,6 +164,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* The container that houses the buttons */
 .register-button {
   align-items: center;
   display: inline-flex;

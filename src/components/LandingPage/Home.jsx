@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import shopper from "../components/assets/asian woman.png";
+import shopper from "../assets/asian woman.png";
 
 const Home = () => {
   return (

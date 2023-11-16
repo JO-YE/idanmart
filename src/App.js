@@ -1,9 +1,10 @@
 import "./App.css";
-import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Registration/Signup";
 import Signin from "./components/Registration/Signin";
 import { Contact } from "./pages/contact/contact";
+import Home from "./components/LandingPage/Home";
+
 
 function App() {
   return (
