@@ -26,8 +26,8 @@ export const Contact = () => {
           <div className="contactLeft">
             <h3>Get intouch with us</h3>
             <form action="" method="post">
-              <p>
-                <input type="text" name="name" id="name" placeholder="name" />
+              <p style={{display: 'flex', gap: '20px'}}>
+                <input  type="text" name="name" id="name" placeholder="name" />
                 <input
                   type="email"
                   name="email"

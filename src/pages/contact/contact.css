@@ -30,6 +30,10 @@
 .mainbox input::placeholder {
   color: black;
 }
+ .contactLeft form  {
+  margin: 10px;
+}
+
 input.message {
   width: 80%;
   height: 302px;
