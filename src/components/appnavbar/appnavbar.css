@@ -1,0 +1,16 @@
+.appnav{
+    width:50%;
+    height: 10vh;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+.appnav a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+}
+.navbox{
+    display: flex;
+    justify-content: center;
+}

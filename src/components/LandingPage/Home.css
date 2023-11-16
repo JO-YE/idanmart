@@ -1,19 +1,24 @@
 .landingpage {
   position: relative;
   display: flex;
+  height: 120vh;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
+  border: 3px solid #422c20;
   background: linear-gradient(
     118deg,
-    rgba(6, 2, 0, 0.92) 35%,
-    rgba(14, 5, 1, 0.44) 64%,
-    #030100 100%
+    rgba(6, 2, 0, 0.92) 29.02%,
+    rgba(14, 5, 1, 0.44) 52.87%,
+    #030100 81.81%
   );
+  background-color: #261612;
 }
 
 .landingpage .overlap {
   position: relative;
   width: 100%;
+  height: 120vh;
   background: linear-gradient(
     118deg,
     rgba(6, 2, 0, 0.92) 35%,
@@ -116,10 +121,9 @@
 
 /* Image class */
 .shopper {
-  width: 784px;
-  height: 1082px;
-  left: 583px;
-  top: -50px;
+  width: 680px;
+  left: 773px;
+  top: -65px;
   position: absolute;
 }
 
