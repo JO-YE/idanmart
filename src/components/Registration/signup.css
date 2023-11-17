@@ -38,8 +38,13 @@ body {
   border-color: rgba(255, 205, 0, 1);
 }
 
-.input:invalid input:invalid {
-  border-color: rgba(150, 60, 56, 1);
+.error-message {
+  color: #b10808;
+  margin-top: 100px;
+  padding: 0px;
+  position: absolute;
+  display: inline-grid;
+  font-size: 15px;
 }
 
 label {
@@ -109,7 +114,6 @@ input {
   display: inline-flex;
   margin-top: 80px;
   transition: background-color 0.3s ease;
- 
 }
 
 .Register:hover {

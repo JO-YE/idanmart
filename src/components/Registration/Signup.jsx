@@ -3,14 +3,83 @@ import "./signup.css";
 import eye from "../assets/visibility.svg";
 import lock from "../assets/lock.svg";
 import user from "../assets/user.svg";
-import flag from "../assets/nigeria.svg";
+/*import flag from "../assets/nigeria.svg"; */
 import Login from "./Login_nav";
 
 const Signup = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
+  // setting the initial object
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    firstName: "",
+    lastName: "",
+    username: "",
+  });
+
+  const [passwordError, setPasswordError] = useState("");
+
+  // a varible to store the object
+  // destructuring assignment to extract values from the formData
+  // the variable will be assigned the corresponding values from the formData
+ // const { email, password, firstName, lastName, userName } = formData;
+
+  const BASE_URL = "https://idan-mart.vercel.app/api/accounts";
+
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
+  };
+
+  const validatePassword = () => {
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordRegex.test(formData.password)) {
+      setPasswordError(
+        "Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one digit, and one special character."
+      );
+    } else {
+      setPasswordError("");
+    }
+  };
+
+  // updating property in the formData object
+  // when an input field's value changes, this function is called
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // this function is used to handle the form submission
+  // takes an event `e` has its parameter
+  const handleFormSubmit = async (e) => {
+    e.preventDefault(); // it prevents the default behavior of the form, which is to reload the page.
+    validatePassword(); // Validate password before submitting the form
+
+    if (passwordError) {
+      console.log("Password validation failed");
+      return; // Do not proceed with form submission if password validation fails
+    }
+
+    // sends a POST request to ${BASE_URL}/register/ with the specified headers and the form data in JSON format
+    try {
+      const response = await fetch(`${BASE_URL}/register/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      // if response is ok, this fxn parses the JSON data from the response
+      const data = await response.json();
+      console.log("Registration successful", data);
+    } catch (error) {
+      console.error("Registration failed", error);
+    }
   };
 
   return (
@@ -18,7 +87,7 @@ const Signup = () => {
       {" "}
       <Login />
       <div className="signup">
-        <form method="POST" action="">
+        <form onSubmit={handleFormSubmit}>
           {/* Email input */}
           <div className="input">
             <label htmlFor="email">Email Address</label>
@@ -42,6 +111,9 @@ const Signup = () => {
             <div className="divider"></div>
             <input
               type="email"
+              name = 'email' // for identifying the input field in the form when handling form submissions.
+              value={formData.email} // Binds the value of the input field to the email property in the formData state.
+              onChange={handleInputChange}
               placeholder="example@abc.com"
               className="inner-text"
               pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
@@ -59,10 +131,12 @@ const Signup = () => {
             <div className="divider"></div>
             <input
               type={passwordVisible ? "text" : "password"}
-              placeholder="Wukkzksxlnmcws?"
               className="inner-text"
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-              title="Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one digit, and one special character."
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              onBlur={validatePassword} // Validate password on blur
+              placeholder="Wukkzksxlnmcws?"
               required
             />
             <div className="visibility">
@@ -72,6 +146,8 @@ const Signup = () => {
                 onClick={togglePasswordVisibility}
               />
             </div>
+            <div className="error-message">{passwordError}</div>
+
           </div>
 
           {/* First name input */}
@@ -83,6 +159,9 @@ const Signup = () => {
             <div className="divider"></div>
             <input
               type="text"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleInputChange}
               placeholder="Lincoln"
               className="inner-text"
               required
@@ -98,14 +177,35 @@ const Signup = () => {
             <div className="divider"></div>
             <input
               type="text"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleInputChange}
               placeholder="Wayne"
               className="inner-text"
               required
             />
           </div>
 
-          {/* Phone Number input */}
+          {/* username input */}
           <div className="input">
+            <label htmlFor="email">Username</label>
+            <div className="mail-icon">
+              <img src={user} alt="user icon" />
+            </div>
+            <div className="divider"></div>
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleInputChange}
+              placeholder="Waynn2023"
+              className="inner-text"
+              required
+            />
+          </div>
+
+          {/* Phone Number input */}
+          {/*   <div className="input">
             <label htmlFor="email">Phone Number</label>
             <div className="mail-icon">
               <img src={flag} alt="flag icon" />
@@ -117,23 +217,13 @@ const Signup = () => {
               className="inner-text"
               required
             />
-          </div>
+  </div> */}
 
           {/* submit button */}
-          <div className="submitbutton">
-            <button className="Register">Register</button>
-          </div>
 
-          {/* signing up with social media account */}
-          {/* <div className="signupwith">
-           <p>Or Siggn up with</p>
-         </div>
- 
-         <div className="socials">
-           <div className="Goggle">
-             <img src={Goggle} alt="" />
-           </div>
-   </div> */}
+          <button type="submit" className="Register">
+            Register
+          </button>
         </form>
       </div>
     </div>
