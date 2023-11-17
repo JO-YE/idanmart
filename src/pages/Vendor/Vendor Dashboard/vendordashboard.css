@@ -76,7 +76,7 @@
   margin-bottom: 20vh;
 }
 .vendorselecteditem > .img {
-  background: url("../../components/assets/shoe.png"),
+  background: url("../../../components/assets/shoe.png"),
     lightgray 50% / cover no-repeat;
   background-position: center;
   width: 100%;
@@ -161,7 +161,7 @@
   height: 40px;
   flex-shrink: 0;
   border-radius: 30px;
-  background: url("../../components/assets/miss-lagos.png"),
+  background: url("../../../components/assets/miss-lagos.png"),
     lightgray 50% / cover no-repeat;
   background-position: center;
 }
