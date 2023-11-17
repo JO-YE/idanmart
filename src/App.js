@@ -5,8 +5,9 @@ import Signin from "./components/Registration/Signin";
 import { Contact } from "./pages/contact/contact";
 import Home from "./components/LandingPage/Home";
 import ABOUT_US from "./pages/AboutUs/About_us";
-import { VendorDashboard } from "./pages/Vendor Dashboard/Vendor Dashboard";
-
+import { VendorDashboard } from "./pages/Vendor/Vendor Dashboard/Vendor Dashboard";
+import { Vendororder } from "./pages/Vendor/vendororder/vendororder";
+import { Vendorproduct } from "./pages/Vendor/vendorproduct/vendorproduct";
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/About" element={<ABOUT_US />} />
-          <Route path="/Vendor/dashboard" element={<VendorDashboard />} />
+          <Route path="/vendor/dashboard" element={<VendorDashboard />} />
+          <Route path="/vendor/order" element={<Vendororder />} />
+          <Route path="/vendor/product" element={<Vendorproduct />} />
+          <Route path="/vendor/profile" element={<Vendorproduct />} />
         </Routes>
       </Router>
     </div>

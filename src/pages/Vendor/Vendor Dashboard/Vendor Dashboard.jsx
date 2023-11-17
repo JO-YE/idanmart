@@ -1,16 +1,19 @@
 import React from 'react'
 import "./vendordashboard.css"
-import { Footer } from '../../components/Footer/Footer'
-import Dashboard from "../../components/assets/dashboard.png"
+import { Footer } from '../../../components/Footer/Footer'
+import Dashboard from "../../../components/assets/dashboard.png"
 import { Link } from 'react-router-dom'
-import shoppingCart from "../../components/assets/shopping_cart.png"
-import Settings from "../../components/assets/ep_setting.png"
-import Chat from "../../components/assets/fluent_chat-20-regular.png"
-import Finance from "../../components/assets/attach_money.png"
-import Analytics from "../../components/assets/finance.png"
-import Product from "../../components/assets/gridicons_product-virtual.png"
-import Promotion from "../../components/assets/ep_promotion.png"
-import Profile from "../../components/assets/ep_promotion.png"
+import shoppingCart from "../../../components/assets/shopping_cart.png"
+import Settings from "../../../components/assets/ep_setting.png"
+import Chat from "../../../components/assets/fluent_chat-20-regular.png"
+import Finance from "../../../components/assets/attach_money.png"
+import Analytics from "../../../components/assets/finance.png"
+import Product from "../../../components/assets/gridicons_product-virtual.png"
+import Promotion from "../../../components/assets/ep_promotion.png"
+import Profile from "../../../components/assets/ep_promotion.png"
+
+
+
 
 export const VendorDashboard = () => {
     return (
